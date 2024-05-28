@@ -1,0 +1,206 @@
+body {
+    padding: 50px 0 0 0;
+    background: #222237;
+    color: #fff
+}
+
+/* Header Code Starts */
+/* ------Nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>div {
+    float: right;
+}
+
+
+nav span {
+    padding: 10px;
+}
+
+nav span:hover {
+    color: #000;
+}
+
+/* ------Header Logo */
+#header-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgb(62, 59, 59);
+    width: 100%;
+}
+
+#header-logo h1 {
+    margin-bottom: 5px;
+    font-size: xx-large;
+    color: rgb(203, 103, 103);
+    font-family: cursive;
+}
+
+
+/* Main Body */
+/* ------Middle Nav Starts Here */
+#middle-nav {
+    display: flex;
+    color: #8c7f7f;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem
+}
+
+#middle-nav span {
+    padding: 0 5px;
+}
+
+#middle-nav span:nth-child(1) {
+    padding-right: 0;
+}
+
+#middle-nav span:nth-child(2) {
+    padding-left: 3px;
+}
+
+/* ------main */
+main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    padding: 50px;
+}
+
+main article {
+    background: white;
+    color: #000;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+main img {
+    width: 100%
+}
+
+/* -------section Pagination */
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer span {
+    padding: 3px 8px;
+    color: #ffffff6b;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer span#active {
+    color: rgb(237, 78, 78);
+    font-weight: bold;
+    border-top: 2px solid rgb(237, 78, 78);
+}
+
+
+/* Main Footer */
+
+footer {
+    border-top: 2px solid rgb(32, 30, 30);
+    margin-top: 70px;
+    padding-top: 30px;
+}
+
+footer span {
+    font-weight: BOLDER;
+}
+
+
+footer span.btn {
+    background: #1288bf;
+    border-radius: 5px;
+    padding: 2px 10px;
+    margin-left: 10px;
+}
+
+#footer-1st-div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.lastdiv {
+    margin: 100px auto 10px auto;
+    text-align: center;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>> Responsive Design 1 <<<<<<<<<<<<<<<<<<<<<<<<<< */
+@media screen and (max-width: 700px) {
+    nav {
+        flex-direction: column;
+    }
+
+    #user-name {
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    nav div:not(#user-name) {
+        display: flex;
+        justify-content: space-around;
+        border-top: 2px solid rgb(32, 30, 30);
+    }
+
+    #header-logo h1 {
+        text-align: center;
+    }
+
+    #span0111 {
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        width: 95%;
+    }
+
+    #middle-nav {
+        overflow: scroll;
+        justify-content: flex-start;
+    }
+
+    #middle-nav::-webkit-scrollbar {
+        visibility: hidden;
+    }
+
+    #middle-nav::-webkit-scrollbar-corner {
+        visibility: hidden;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #foot {
+        text-align: center;
+    }
+
+    footer div:nth-child(1) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lastbtn {
+        margin: 10px;
+    }
+
+    .lastdiv {
+        padding: 10px;
+    }
+
+    #footer-1st-div {
+        border-bottom: 2px solid rgb(32, 30, 30);
+    }
+}

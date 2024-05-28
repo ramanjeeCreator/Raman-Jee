@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eee;
+    /* margin: 0; */
+    /* overflow-x: hidden; */
+}
+
+form {
+    width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h1 span {
+    color: blue;
+    font-size: x-large;
+}
+
+form>div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form>div>div {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+label {
+    padding: 10px 0;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    width: 100%;
+    /* height: 30px; */
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+.address {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.submit {
+    justify-content: flex-end;
+}
+
+.submit input {
+    background: red;
+    width: 200px;
+    color: #fff;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>> Responsive Design <<<<<<<<<<<<<<<<<<<<<<<<<< */
+@media screen and (max-width: 740px) {
+    form {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    form>div {
+        flex-direction: column;
+    }
+
+    form>div>div {
+        width: 100%;
+    }
+
+    .submit>input {
+        width: 100%;
+    }
+
+}

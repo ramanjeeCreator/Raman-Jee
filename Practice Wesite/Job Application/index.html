@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+  </head>
+  <body>
+    <form action="mailto:jee803302@gmail.com" method="post" enctype="text/plain">
+      <h1>Job Application <span>(Web)</span></h1>
+      <div class="name">
+        <div class="first-name">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" />
+        </div>
+        <div class="last-name">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" />
+        </div>
+      </div>
+      <div class="email&job">
+        <div class="email">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="jobrole">
+          <label for="jobrole">Job Role</label>
+          <select name="jobrole" id="jobrole" aria-label="Select Job Role">
+            <option value="select" selected>Select Job Role</option>
+            <option value="student">Student</option>
+            <option value="teacher">teacher</option>
+            <option value="webdeveloper">Web Developer</option>
+            <option value="appdeveloper">App Developer</option>
+          </select>
+        </div>
+      </div>
+      <div class="address">
+        <label for="address">Address</label>
+        <textarea name="address" id="address"></textarea>
+      </div>
+      <div class="city&pincode">
+        <div class="city">
+          <label for="city">City</label>
+          <input type="text" id="city" />
+        </div>
+        <div class="pincode">
+          <label for="pincode">Pin Code</label>
+          <input type="number" id="pincode" />
+        </div>
+      </div>
+      <div class="date&cv">
+        <div class="date">
+          <label for="date">Start Date</label>
+          <input type="date" id="date" />
+        </div>
+        <div class="cv">
+          <label for="cv">Upload Your CV</label>
+          <input type="file" id="cv" />
+        </div>
+      </div>
+      <div class="submit">
+          <input type="submit" value="Apply Now" />
+      </div>
+    </form>
+
+    <script src="JS/main.js"></script>
+  </body>
+</html>

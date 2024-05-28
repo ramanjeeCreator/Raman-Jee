@@ -1,0 +1,78 @@
+:root {
+    --border: #1D1E4C;
+    --background: #E5E5FD;
+}
+
+body {
+    font-family: cursive;
+    background: var(--background);
+    border: 10px solid var(--border);
+    margin: 0;
+    line-break: strict;
+    padding: 50px 30px 10px 30px;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>> Header <<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+    width: 200px;
+    height: 100%;
+    border-radius: 50%;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header p {
+    float: right;
+    font-weight: bolder;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>> Section <<<<<<<<<<<<<<<<<<<<<<<<<< */
+section h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+section strong {
+    font-size: large;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>> footer <<<<<<<<<<<<<<<<<<<<<<<<<< */
+footer p {
+    text-align: right;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>> Responsive Design <<<<<<<<<<<<<<<<<<<<<<<<<< */
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    header p {
+        float: none;
+        text-align: center;
+    }
+
+    section h1 {
+        font-size: 1.5rem;
+    }
+
+    body {
+        padding: 50px 5px 10px 5px;
+    }
+    footer p {
+        text-align: center;
+        border-top: 1px solid var(--border);
+    }
+}
